@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pinterest Clone</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        header {
+            background: url("Images/Pink.jpg") no-repeat center center;
+        background-size: 100% 100%;
+        padding: 20px;
+        }
+        .pin {
+            width: 230px;
+            height: 230px;
+            background-image: url('https://via.placeholder.com/300x400.png?text=Pin+Background');
+            background-size: cover;
+            position: relative;
+        }
+
+        .pin-picture {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="pins">
+            <div class="pin">
+                <img src="Images/Animals.jpg" alt="Pin Picture" class="pin-picture">
+                <p>Animals</p>
+            </div>
+            <div class="pin">
+                <img src="Images/Food.jpg" alt="Pin Picture" class="pin-picture">
+                <p>Foods</p>
+            </div>
+            <div class="pin">
+                <img src="Images/People.jpg" alt="Pin Picture" class="pin-picture">
+                <p>People</p>
+            </div>
+            <div class="pin">
+                <img src="Images/Place.jpg" alt="Pin Picture" class="pin-picture">
+                <p>Places</p>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <p>&copy; 2024 Pinterest Clone</p>
+    </footer>
+</body>
+</html>
